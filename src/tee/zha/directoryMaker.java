@@ -2,8 +2,11 @@ package tee.zha;
 /*=========================================================================
 * directoryMaker.java
 * Author: Toby Zhang
+*
 * Purpose: This program makes me folders for my TV shows and puts the min so I can place them in the sorted folder
+*
 * Future plans: make the default path selectable or changeable by the user.
+* Create regex input to sort different filename formats
  */
 
 import java.io.File;
@@ -20,10 +23,12 @@ public class directoryMaker {
         String defaultPath = "D:\\UNSORTED TBW\\";
 
 
+        //for loop for each file in the list
         for (int i = 0; i < listOfFiles.length; i++) {
             if (listOfFiles[i].isFile()) {
 
                 //splits file name with - Only want the name before - so we call for 0.
+                //This is the deafult way of show my shows are sorted.
                 // also adds a - in the string in case there is no - in file
                 String fileName = listOfFiles[i].getName() + "-";
                 String[] names = fileName.split("-");
