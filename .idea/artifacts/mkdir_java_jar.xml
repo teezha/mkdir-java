@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="mkdir-java:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/mkdir_java_jar</output-path>
+    <root id="archive" name="mkdir-java.jar">
+      <element id="module-output" name="mkdir-java" />
+    </root>
+  </artifact>
+</component>
